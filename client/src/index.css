@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #212529;
+    color: #fff;
+    display: flex;
+}
+
+#root {
+    width: 100%;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* DarkModeSwitch.css */
+
+.slider-circle {
+    transition: cx 0.3s ease, cy 0.3s ease;
+}
+
+
+.white-content {
+    background-color: #ffff;
+    color: #212529;
+}
+
+.white-content nav .btn-group {
+    @apply bg-slate-200;
+
+}
+
+.white-content nav #social-link span svg {
+    @apply bg-slate-200;
+}
+
+.white-content nav svg text {
+    fill: black
+}
+.white-content #contact-conatiner #contact-head span svg{
+ @apply bg-slate-200;   
+}
+#title {
+    color: #007bff;
+    font-family: 'Oswald';
+    font-weight: 700;
+}
+
+.btn-group {
+    @apply text-sm lg:text-base mx-1 my-2 h-fit w-auto  px-[10px] py-[5px] md:px-5 md:py-2 rounded-lg leading-5 text-left bg-slate-700 font-oswald uppercase;
+
+
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"%3E%3Cpath fill="%23000" d="M0 0h10L5 6z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 24px;
+}
+
+
+.custom-select::-ms-expand {
+    display: none;
+}
+
+.custom-select option {
+    /* Style the dropdown options as desired */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#price-conatiner {
+    @apply relative  px-4 flex justify-around items-center text-black text-xs mt-4 md:h-52 h-fit ;
+}
+
+.pasentage-conatiner {
+    @apply mx-1 leading-5 md:leading-normal;
+}
+
+.pasentage {
+    @apply text-[#3dc6c1] md:text-[30px] lg:text-5xl;
+}
+
+.min-div {
+    @apply text-[10px] text-center md:text-lg;
+}
+
+.bestPrice-div {
+    @apply h-full w-auto text-center flex flex-col gap-4 items-center;
+}
+
+.bestPrice-div h1 {
+    @apply text-sm md:text-xl text-gray-500 leading-3 tracking-wide;
+}
+
+.bestPrice-div .price {
+    @apply text-[20px] text-white py-3 md:text-6xl lg:text-8xl whitespace-nowrap;
+}
+
+
+.bestPrice-div p {
+    @apply text-[8px] text-gray-500 leading-3 md:text-sm;
+}
+
+.min-div {
+    @apply text-gray-500 ;
+}
+
+.white-content .price {
+    @apply text-black;
+}
+
+#platform-coantiner {
+    @apply box-border px-0 sm:px-6 pb-10 mx-auto w-auto h-auto overflow-x-scroll;
+}
+
+#cryptoTable {
+    @apply box-border table w-full h-auto;
+}
+
+#cryptoTable thead {
+    @apply text-sm whitespace-nowrap text-gray-500 font-oswald font-bold text-center;
+}
+
+#cryptoTable thead tr,
+th {
+    @apply px-2 py-1 md:text-2xl;
+}
+
+/* #cryptoTable tr td,tr th{
+    @apply  border-2 border-red-950;
+} */
+
+#cryptoTable tbody {
+    @apply table-row-group align-middle border-inherit;
+}
+
+#cryptoTable tbody tr {
+    @apply    h-1 md:h-16  text-center md:text-2xl table-row align-middle divide-y-8 divide-[#212529] whitespace-nowrap;
+}
+
+#cryptoTable tbody tr td{
+    @apply bg-slate-700;
+}
+.white-content  #platform-coantiner #cryptoTable tbody tr td  {
+    @apply bg-slate-100;
+}
+
+.columnOne{
+    @apply border-t-8 border-[#212529];
+}
+.white-content #platform-coantiner #cryptoTable tbody tr td {
+    @apply border-t-8 border-[#ffff];
+}
+#cryptoTable tbody tr td:first-child {
+    border-radius: 10px 0 0 10px;
+
+}
+
+#cryptoTable tbody tr td:last-child {
+    border-radius: 0 10px 10px 0;
+
+}
+
+#cryptoTable tbody tr td div{
+    @apply h-full flex items-center justify-center;
+}
+
+.exchange-logo{
+    @apply h-3 m-2;
+}
+
+
+.Footer-conatiner {
+    @apply  absolute bottom-0  md:relative lg:relative bottom-0 w-full text-sm text-gray-500;
+}
+
+.Footer-conatiner hr {
+    @apply mb-1;
+}
+
+.Footer-section {
+    @apply w-full flex items-center;
+}
+
+.Footer-section .copyRight {
+    @apply p-2;
+}
+
+.Footer-section .web-site {
+    @apply flex-1 px-3;
+}
+
+.Footer-section .support {
+    @apply p-4;
+}
+#contact-conatiner{
+    @apply block;
+}
+#contact-head{
+    @apply w-full flex justify-center items-center flex-col;
+}
+#contact-section{
+    @apply w-full text-center my-4;
+}
+#contact-section h1{
+    @apply text-2xl my-4;
+}
+.sub-section{
+    @apply block py-5;
+}
+.sub-section  h3{
+    @apply block py-2;
+}
